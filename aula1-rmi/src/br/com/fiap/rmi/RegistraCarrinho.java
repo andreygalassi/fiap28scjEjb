@@ -7,7 +7,7 @@ import java.rmi.registry.LocateRegistry;
 public class RegistraCarrinho {
 	public static void main(String[] args) throws Exception {
 		LocateRegistry.createRegistry(1099);
-		Naming.rebind("farmacia/carrinho", (Remote) new CarrinhoBean());
+		Naming.rebind("farmacia/carrinho", new CarrinhoBean());
 		System.out.println("carrinho registrado");
 	}
 }

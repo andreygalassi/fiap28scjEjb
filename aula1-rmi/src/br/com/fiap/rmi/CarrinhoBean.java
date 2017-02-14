@@ -1,10 +1,11 @@
 package br.com.fiap.rmi;
 
 import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CarrinhoBean {
+public class CarrinhoBean extends UnicastRemoteObject implements Carrinho{
 	private List<Item> itens= new ArrayList();
 	
 	protected CarrinhoBean() throws RemoteException{
