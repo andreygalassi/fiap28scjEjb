@@ -3,7 +3,8 @@ package br.com.fiap.rmi;
 import java.io.Serializable;
 
 public class Item implements Serializable {
-	private static final long serialVersionUID = 1L;
+//	private static final long serialVersionUID = 8034259959961746151L;
+	private static final long serialVersionUID = 12311L;
 	private String nome;
 	private double preco;
 	
